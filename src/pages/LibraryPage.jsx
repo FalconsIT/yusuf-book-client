@@ -8,7 +8,7 @@ import HTMLFlipBook from 'react-pageflip';
 import { CommentsPanel } from '../components/CommentsPanel';
 
 // Web Audio API Paper Swish Sound Generator
-const playPageTurnSound = (audioCtxRef) => {
+const playyusufSound = (audioCtxRef) => {
   try {
     if (!audioCtxRef.current) {
       audioCtxRef.current = new (window.AudioContext || window.webkitAudioContext)();
@@ -210,7 +210,7 @@ export default function LibraryPage() {
 
   const handlePageFlip = () => {
     if (soundEnabled) {
-      playPageTurnSound(audioCtxRef);
+      playyusufSound(audioCtxRef);
     }
   };
 

@@ -13,7 +13,7 @@ export const useAuthStore = create(
       logout: () => set({ isAuthenticated: false, user: null }),
     }),
     {
-      name: 'pageturn-auth',
+      name: 'yusuf-auth',
     }
   )
 );

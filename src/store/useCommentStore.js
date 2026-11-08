@@ -40,7 +40,7 @@ export const useCommentStore = create(
       })
     }),
     {
-      name: 'pageturn-comments',
+      name: 'yusuf-comments',
     }
   )
 );

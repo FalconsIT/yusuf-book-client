@@ -9,7 +9,7 @@ export default function AboutPage() {
         We believe every<br /><em className="text-brand-accentDark">page can open a door.</em>
       </h1>
       <p className="text-lg text-gray-600 leading-relaxed mb-12">
-        PageTurn makes it easier to slow down, stay curious, and spend time with the books that make you think.
+        yusuf makes it easier to slow down, stay curious, and spend time with the books that make you think.
       </p>
       <div className="grid md:grid-cols-3 gap-8 py-12 border-y border-brand-border mb-12">
         {['Make space', 'Stay curious', 'Keep growing'].map((title, i) => (
