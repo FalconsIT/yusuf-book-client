@@ -10,7 +10,9 @@ export const useBookStore = create((set, get) => ({
   fetchBooks: async () => {
     set({ isLoading: true, error: null });
     try {
-      const books = await apiClient.get('/books');
+      const response = await apiClient.get('/books');
+      // Ensure response is an array
+      const books = Array.isArray(response) ? response : response?.data || [];
       set({
         books,
         activeBookId: get().activeBookId || (books.length > 0 ? books[0].id : null),

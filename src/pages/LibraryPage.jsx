@@ -215,7 +215,8 @@ export default function LibraryPage() {
   };
 
   const filteredBooks = useMemo(() => {
-    return books.filter(book => {
+    const booksArray = Array.isArray(books) ? books : [];
+    return booksArray.filter(book => {
       const matchesCategory = selectedCategory === 'All' || book.category === selectedCategory;
       const matchesSearch = !debouncedSearchQuery.trim() || 
         book.title.toLowerCase().includes(debouncedSearchQuery.toLowerCase()) || 
