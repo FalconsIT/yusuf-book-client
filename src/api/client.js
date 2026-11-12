@@ -4,7 +4,7 @@ import { useToastStore } from '../store/useToastStore';
 
 // Create a dedicated Axios instance
 export const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000',
+  baseURL: import.meta.env.VITE_API_URL || '/api',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
